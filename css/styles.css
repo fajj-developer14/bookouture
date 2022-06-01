@@ -1,0 +1,28 @@
+:root {
+    --red: rgb(232, 3, 26);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.navbar-dark {
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 230px;
+    height: 43px;
+    object-fit: cover;
+}
+
+.navbar-list a {
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.navbar-list a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
