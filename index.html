@@ -65,15 +65,30 @@
           <!-- submit -->
           <div class="col-2 col-md-4 align-self-start pt-2">
             <span class="nav-link text-white">
-              <a class="text-reset d-md-none" href="#">
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                <a class="text-reset d-none d-md-block" href="#">Submit -> </a>
-              </a>
+              <!-- tootltip on link icon -->
+              <a
+                class="text-reset d-md-none"
+                data-bs-toggle="tooltip"
+                title="Submit"
+                href="#"
+              >
+                <i class="fa fa-paper-plane" aria-hidden="true"></i
+              ></a>
+              <a class="text-reset d-none d-md-block" href="#">Submit -> </a>
             </span>
           </div>
         </div>
       </div>
     </nav>
+
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
