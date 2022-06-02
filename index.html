@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="css/styles.css " />
   </head>
   <body>
+    <!-- navigation bar -->
     <nav class="navbar navbar-expand-md bg-red navbar-dark">
       <div class="container-xxl">
         <div class="row w-100 justify-content-between">
           <!-- button for mobile scrns -->
-          <div class="col-3 col-md-12">
+          <div class="col-3 col-md-12 order-md-last">
             <button
               class="navbar-toggler mb-1"
               type="button"
@@ -34,7 +35,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
-              class="collapse navbar-collapse align-items-center justify-content-center"
+              class="collapse navbar-collapse justify-content-center"
               id="main-nav"
             >
               <ul class="navbar-nav navbar-list text-nowrap">
@@ -57,14 +58,16 @@
             </div>
           </div>
           <!-- brand -->
-          <div class="col-5">
+          <div class="col-5 ms-md-auto me-md-4 me-xl-0 my-md-3">
             <a class="navbar-brand" href="#">
               <img class="logo-img" src="images/logo.png" alt="" />
             </a>
           </div>
           <!-- submit -->
-          <div class="col-2 col-md-4 align-self-start pt-2">
-            <span class="nav-link text-white">
+          <div
+            class="col-2 pt-2 d-flex justify-content-end align-items-md-center"
+          >
+            <span class="text-white fw-bold text-uppercase">
               <!-- tootltip on link icon -->
               <a
                 class="text-reset d-md-none"
@@ -74,7 +77,15 @@
               >
                 <i class="fa fa-paper-plane" aria-hidden="true"></i
               ></a>
-              <a class="text-reset d-none d-md-block" href="#">Submit -> </a>
+              <!-- submit for md scrrns -->
+              <a class="text-reset d-none d-md-block nav-submit" href="#"
+                >Submit here
+                <!-- icon -->
+                <i
+                  class="fa fa-solid fa-chevron-right ms-1"
+                  aria-hidden="true"
+                ></i>
+              </a>
             </span>
           </div>
         </div>

@@ -1,9 +1,9 @@
 :root {
-    --red: rgb(232, 3, 26);
+    --nav-red: rgb(232, 3, 26);
 }
 
 .bg-red {
-    background-color: var(--red);
+    background-color: var(--nav-red);
 }
 
 .navbar-dark {
@@ -25,4 +25,24 @@
 .navbar-list a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+.nav-submit {
+    text-decoration: none;
+    font-size: .8rem;
+    transition: transform 0.15s;
+}
+
+.nav-submit:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 728px) {
+    .nav-item {
+        margin: 0 0.7rem;
+    }
+    
+    .navbar-collapse {
+        border-top: 1px solid rgb(247, 79, 79);
+    }
 }
