@@ -1,5 +1,10 @@
 :root {
     --nav-red: rgb(232, 3, 26);
+    --sea-green: rgb(13, 176, 147);
+}
+
+section {
+    padding: 60px 0;
 }
 
 .bg-red {
@@ -37,7 +42,7 @@
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
     .nav-item {
         margin: 0 0.7rem;
     }
@@ -45,4 +50,25 @@
     .navbar-collapse {
         border-top: 1px solid rgb(247, 79, 79);
     }
+}
+
+.text-sea-green {
+    color: var(--sea-green);
+}
+
+.btn-sea-green {
+    padding: 0.4rem 2rem 0.5rem;
+    text-align: top;
+    background-color: var(--sea-green);
+    color: #fff;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 3px 0 rgb(1, 124, 102);
+    /* TODO: Consider separating skin from structure */
+    font-size: 0.9rem;
+    transition: background-color 0.15s, box-shadow 0.2s ease-in-out;
+}
+
+.btn-sea-green:hover {
+    background-color: rgb(9, 155, 128);
 }
